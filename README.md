@@ -22,7 +22,9 @@ Each row in the CSV defines a **custom filename** and the **YouTube URL** to dow
 ### Usage
 ```bash
 python yt_batch_download.py links.csv -o downloads
+```
 
 ### Windows (recommended):
 ```bash
 winget install --id Gyan.FFmpeg -e
+```
