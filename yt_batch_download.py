@@ -1,3 +1,43 @@
+###############################################
+# 
+#  Batch YouTube Video Downloader
+#
+#  Description:
+#  -----------------
+#  Reads a CSV file with two columns — the first for the desired
+#  video name, the second for the YouTube link — and downloads each
+#  video using yt-dlp. The downloaded files are saved using the
+#  custom names defined in the CSV.
+#
+#  Usage:
+#  -----------------
+#  python yt_batch_download.py links.csv -o downloads
+#
+#  Optional arguments:
+#    -f FORMAT       yt-dlp format selector
+#                    e.g. "best[acodec!=none][vcodec!=none]/22/18"
+#                    (use this to avoid needing ffmpeg)
+#
+#    --no-header     Treat CSV as headerless (each row = name, link)
+#    --overwrite     Overwrite existing files if they already exist
+#
+#  Example:
+#  -----------------
+#  python yt_batch_download.py links.csv -o downloads -f "best[acodec!=none][vcodec!=none]/22/18"
+#
+#  CSV Format:
+#  -----------------
+#  name,link
+#  my_first_video,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+#  lecture_01,https://youtu.be/abc123
+#
+#  Requirements:
+#  -----------------
+#  pip install yt-dlp
+#  (optional, for merging audio+video: install ffmpeg)
+#
+###############################################
+
 import argparse
 import csv
 import os
