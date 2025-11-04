@@ -1,11 +1,11 @@
-# 🎬 Batch YouTube Video Downloader
+## Batch YouTube Video Downloader
 
 A simple Python utility to **batch download YouTube videos** from a CSV file using [yt-dlp](https://github.com/yt-dlp/yt-dlp).  
 Each row in the CSV defines a **custom filename** and the **YouTube URL** to download.
 
 ---
 
-## 🚀 Features
+### Features
 
 - Batch downloads from a single CSV file  
 - Uses **custom video names** from the CSV  
@@ -13,7 +13,7 @@ Each row in the CSV defines a **custom filename** and the **YouTube URL** to dow
 
 ---
 
-## 🧩 Requirements
+### Requirements
 
 - **Python 3.8+**
 - **yt-dlp** (install with `pip install yt-dlp`)
