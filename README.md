@@ -19,6 +19,10 @@ Each row in the CSV defines a **custom filename** and the **YouTube URL** to dow
 - **yt-dlp** (install with `pip install yt-dlp`)
 - *(optional)* **ffmpeg** for merging audio and video streams
 
+### Usage
+```bash
+python yt_batch_download.py links.csv -o downloads
+
 ### Windows (recommended):
 ```bash
 winget install --id Gyan.FFmpeg -e
