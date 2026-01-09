@@ -146,8 +146,8 @@ def main():
     parser.add_argument("csv", type=str, help="Path to CSV file.")
     parser.add_argument("-o", "--output-dir", type=str, default="downloads",
                         help="Directory to save videos (default: downloads)")
-    parser.add_argument("-f", "--format", type=str, default="bestvideo+bestaudio/best",
-                        help="yt-dlp format selector (default: bestvideo+bestaudio/best)")
+    parser.add_argument("-f", "--format", type=str, default="bestvideo[vcodec=h264][ext=mp4]+bestaudio[acodec=aac][ext=m4a]/best[ext=mp4]",
+                        help="yt-dlp format selector (default: bestvideo[vcodec=h264][ext=mp4]+bestaudio[acodec=aac][ext=m4a]/best[ext=mp4])")
     parser.add_argument("--overwrite", action="store_true",
                         help="Overwrite if a file with the same base name already exists.")
     args = parser.parse_args()
